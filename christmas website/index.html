@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ամանօրյա Նվերներ </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- custom javascript link  -->
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-gifts"></i> Amanor.am </a>
+
+    <nav class="navbar">
+        <a href="#home">Մենյու</a>
+        <a href="#about">Մեր Մասին</a>
+        <a href="#shop">Խանութ</a>
+        <a href="#gallery">Նկարներ</a>
+        <a href="#message">Կապ</a>
+        <a href="#blogs">Ինֆո</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="slide active" style="background:url(images/home-bg-1.png) no-repeat; background-size: cover; background-position: center;">
+        <div class="content">
+            <span>Շնորհավոր Ամանօր</span>
+            <h3>60% Զեղչ</h3>
+            <a href="#" class="btn">Գնել Հիմա</a>
+        </div>
+    </div>
+
+    <div class="slide" style="background:url(images/home-bg-2.png) no-repeat; background-size: cover; background-position: center;">
+        <div class="content">
+            <span>հա-հա-հա</span>
+            <h3>Շնորհավոր Սուրբ Ծնունդ</h3>
+            <a href="#" class="btn">Գնել Հիմա</a>
+        </div>
+    </div>
+
+    <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+    <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- category section starts  -->
+
+<section class="category">
+
+    <div class="box-container">
+
+        <a href="#" class="box">
+            <img src="images/category-1.png" alt="">
+            <h3>Տոնածառի Խաղալիքներ</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-2.png" alt="">
+            <h3>Տոնածառի Խաղալիքներ</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-3.png" alt="">
+            <h3>Տոնածառի Խաղալիքներ</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-4.png" alt="">
+            <h3>Տոնածառի Խաղալիքներ</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-5.png" alt="">
+            <h3>Տոնածառի Խաղալիքներ</h3>
+        </a>
+
+        <a href="#" class="box">
+            <img src="images/category-6.png" alt="">
+            <h3>Տոնածառի Խաղալիքներ</h3>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="images/about-img.png" alt="">
+    </div>
+
+    <div class="content">
+        <div class="box">
+            <h3>Սկսվել է Ամանօրյա Զեղչերը </h3>
+            <p>Շտապեք</p>
+           
+        </div>
+        <div class="icons-container">
+            <div class="icons">
+                <i class="fas fa-tree"></i>
+                <p>Ամանօրյա Տոնածառներ</p>
+            </div>
+            <div class="icons">
+                <i class="fas fa-cookie"></i>
+                <p>Ամանօրյա Տորթեր</p>
+            </div>
+            <div class="icons">
+                <i class="fas fa-gifts"></i>
+                <p>Ամանօրյա Նվերներ</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- shop section starts  -->
+
+<section class="shop" id="shop">
+
+    <h1 class="heading">Զեղչեր 60% Մինչև Դեկտեմբերի 25-ը։</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/product-1.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Դեկորատիվ</h3>
+                <div class="price"> 200դրամ <span>800դրամ</span> </div>
+                <a href="#" class="btn">Ավելացնել Վճարում</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/product-2.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Տոնածառի Լույսեր</h3>
+                <div class="price"> 3000դրամ <span>5000դրամ</span> </div>
+                <a href="#" class="btn">Ավելացնել Վճարում</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/product-3.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Տոնածառի Խաղալիքներ</h3>
+                <div class="price"> 500դրամ <span>900դրամ</span> </div>
+                <a href="#" class="btn">Ավելացնել Վճարում</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/product-4.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Տոնածառի Խաղալիքներ</h3>
+                <div class="price"> 200դրամ <span>400դրամ</span> </div>
+                <a href="#" class="btn">Ավելացնել Վճարում</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/product-5.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Տոնածառի Խաղալիքներ</h3>
+                <div class="price">200դրամ<span>400դրամ</span> </div>
+                <a href="#" class="btn">Ավելացնել Վճարում</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/product-6.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-eye"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Տոնական Հագուստներ</h3>
+                <div class="price"> 900դրամ <span>1500դրամ</span> </div>
+                <a href="#" class="btn">Ավելացնել Վճարում</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- shop section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner">
+
+    <div class="content">
+        <span>Զեղչեր Մինչև Դեկտեմբերի 25-ը։</span>
+        <h3>60% Զեղչեր</h3>
+       
+     
+    </div>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">Շտապեք Սիրով Amanor.am:</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/gallery-img-1.jpg" alt="">
+            <div class="content">
+                <h3></h3>
+                <p>Ամանօրյա Նվերներ!</p>
+               
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/gallery-img-2.jpg" alt="">
+            <div class="content">
+                <h3></h3>
+                <p>Ամանօրյա Հագուստներ!</p>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/gallery-img-3.jpg" alt="">
+            <div class="content">
+                <h3>Տոնածառի Խաղալիքներ</h3>
+              
+               
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/gallery-img-4.jpg" alt="">
+            <div class="content">
+             
+                <p>Տոնածառի Խաղալիքներ!</p>
+               
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/gallery-img-5.jpg" alt="">
+            <div class="content">
+            
+                <p>Ամանօրյա Խաղալիքներ!</p>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/gallery-img-6.jpg" alt="">
+            <div class="content">
+            
+                <p>Տան Զարդարանք և Դիզայն!</p>
+                
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- message sections starts  -->
+
+<section class="message" id="message">
+
+    <form action="">
+        <h3>Կապ Մեզ Հետ</h3>
+        <input type="text" placeholder="Անուն" class="box">
+        <input type="email" placeholder="Մայլ" class="box">
+        <input type="number" placeholder="Հեռախոսահամար" class="box">
+        <textarea name="" placeholder="Կարծիք" class="box" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="Ուղարկել Նամակը" class="btn">
+    </form>
+
+</section>
+
+<!-- message section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+  
+</section>
+
+<!-- blogs section ends -->
+
+<!-- services section starts  -->
+
+<section class="service">
+
+    <div class="box">
+        <img src="images/icon-1.png" alt="">
+        <h3>Անվճար առաքում ՀՀ մարզերում</h3>
+        
+    </div>
+
+    <div class="box">
+        <img src="images/icon-2.png" alt="">
+        <h3>Ապահով վճարումներ</h3>
+ 
+       
+    </div>
+
+    <div class="box">
+        <img src="images/icon-3.png" alt="">
+        <h3>24/7 աջակցություն</h3>
+       
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        
+
+        <div class="box">
+            <h3>Կոնտակտային տվյալներ</h3>
+            <a class="link" href="#"> <i class="fas fa-phone"></i> +37493534183 </a>
+       
+            <a class="link" href="#"> <i class="fas fa-envelope"></i> rafikmartirosyan19@gmail.com </a>
+            <a class="link" href="#"> <i class="fas fa-map"></i>Վազգեն Սարգսյան տուն 12 </a>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Կարծիք</h3>
+            
+            <form action="">
+                <input type="Մայլ" name="" placeholder="Գրեք ձեր Մայլը" id="" class="email">
+                <input type="Ուղարկել" value="Միանալ" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+
+
+</section>
+
+<!-- footer section ends -->
+
+</body>
+</html>
